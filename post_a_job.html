@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post-a-Job</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> <!--Jquery cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!--Bootstrap cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide"> <!--Google Font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--ICON Link-->
+    <style>
+        h1{
+            color: aliceblue;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+            color: aliceblue;
+        }
+        a{
+            color: aliceblue;
+            text-align: center;
+        }
+        .form_p{
+            text-align: left;
+        }
+        form label{
+            color: aliceblue;
+        }
+        
+    </style>
+</head>
+<body class="bg-dark">
+    <div class="container mt-5 pt-5">
+        <div class="div1">
+            <h1>Post A Job</h1>
+            <p><a href="index.html"> HOME</a></p>
+        </div>
+        <form>
+            <p class="form_p">Job Information:</p>
+            <div class="row">
+                <div class="col">
+                    <label for="Job_title" class="form-label">Job Title:</label>
+                    <input type="text" class="form-control" id="job_title" placeholder="Senior UI/UX Engineer" name="Job_title">
+                </div>
+                <div class="col">
+                    <label for="Job_Category" class="form-label">Job Category:</label>
+                    <select class="form-select"  name="Job_Category">
+                        <option>Select Job Category</option>
+                        <option>Front End Developer</option>
+                        <option>Data Analyst</option>
+                        <option>UI/UX Designer</option>
+                      </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <label for="vaccancies" class="form-label">Vaccancies:</label>
+                    <input type="text" class="form-control" id="vacacncies" placeholder="08 Person" name="vaccancies">
+                </div>
+                <div class="col">
+                    <label  for="B_S" class="form-label">Budget/Salary</label>
+                    <input type="text" class="form-control" id="salary" name="B_S" placeholder="Enter the salary package">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <label for="job_type" class="form-label">Job Type:</label>
+                    <select name="job_type" id="JT" class="form-select">
+                        <option>Select Job type</option>
+                        <option>Full Time</option>
+                        <option>Part Time</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="Experience_Level" class="form-label">Experience Level</label>
+                    <input type="text" name="Experience_Level" class="form-control" id="Exper" placeholder="Type Experience Required">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <label for="Deadline" class="form-label">Deadline:</label>
+                    <input type="date" class="form-control" id="date" name="Deadline">
+                </div>
+                <div class="col">
+                    <label for="tags" class="form-label">Job Tag</label>
+                    <input type="text" class="form-control" id="tag" name="tags"placeholder="e.g PHP, Social Media, Management">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <label for="jd" class="form-label">Job Description:</label>
+                    <textarea rows="7" cols="15" class="form-control" id="tarea"></textarea>
+                </div>   
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <label class="form-check-label">
+                        <input type="checkbox" name="chbox" class="form-check-input" >
+                        Here, I accepted company terms & conditions.
+                    </label>
+                </div>
+            </div>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-info w-25">Post Now</button>
+            
+        </form>
+
+    </div>
+    
+</body>
+</html>
